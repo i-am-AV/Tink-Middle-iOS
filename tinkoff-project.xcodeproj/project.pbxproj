@@ -161,14 +161,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EB87A7562402AC3A008E5D51 /* Build configuration list for PBXNativeTarget "tinkoff-project" */;
 			buildPhases = (
-				EB87A75C2402E0D9008E5D51 /* ShellScript */,
 				F2603E4BCBB621A90FB2FE41 /* [CP] Check Pods Manifest.lock */,
 				EB87A7592402D3ED008E5D51 /* R.swift */,
 				EB87A73E2402AC34008E5D51 /* Sources */,
 				EB87A73F2402AC34008E5D51 /* Frameworks */,
 				EB87A7402402AC34008E5D51 /* Resources */,
 				9C552486A991C08B0AE56C5A /* [CP] Embed Pods Frameworks */,
-				A7FAE01B240420620052FBAB /* ShellScript */,
+				EB87A75C2402E0D9008E5D51 /* Swiftlint */,
 			);
 			buildRules = (
 			);
@@ -243,23 +242,6 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-tinkoff-project/Pods-tinkoff-project-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		A7FAE01B240420620052FBAB /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nif which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"error: SwiftLint does not exist, download it from https://github.com/realm/SwiftLint\"\n  exit 1\nfi\n\n";
-		};
 		EB87A7592402D3ED008E5D51 /* R.swift */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -280,7 +262,7 @@
 			shellPath = /bin/sh;
 			shellScript = "\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/R.generated.swift\"\n";
 		};
-		EB87A75C2402E0D9008E5D51 /* ShellScript */ = {
+		EB87A75C2402E0D9008E5D51 /* Swiftlint */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -289,6 +271,7 @@
 			);
 			inputPaths = (
 			);
+			name = Swiftlint;
 			outputFileListPaths = (
 			);
 			outputPaths = (

@@ -14,27 +14,34 @@ class LoginScreenViewModel: LoginScreenViewModelProtocol {
 	var password: String
 	var isNeedPinCode: Bool
 
+    var didValidateCredentials: ((Bool) -> Void)?
+
 	init(login: String, password: String, isNeedPinCode: Bool = false) {
 		self.login = login
 		self.password = password
 		self.isNeedPinCode = isNeedPinCode
 	}
 
-	func changeLogin(_ newLogin: String) {
+    func changeLogin(_ newLogin: String) {
+        self.login = newLogin
+        validateCredentials()
+    }
 
-		if newLogin.count >= 3 && newLogin.count <= 20 {
-			self.login = newLogin
-		}
-	}
-
-	func changePassword(_ newPassword: String) {
-		if newPassword.count >= 8 && newPassword.count <= 20 {
-			self.password = newPassword
-		}
-	}
+    func changePassword(_ newPassword: String) {
+        self.password = newPassword
+        validateCredentials()
+    }
 
 	func setNeedPinCode(_ need: Bool) {
 		self.isNeedPinCode = need
 	}
+
+    private func validateCredentials() {
+        if login.count >= 3 && login.count <= 20 && password.count >= 8 && password.count <= 20 {
+            didValidateCredentials?(true)
+        } else {
+            didValidateCredentials?(false)
+        }
+    }
 
 }

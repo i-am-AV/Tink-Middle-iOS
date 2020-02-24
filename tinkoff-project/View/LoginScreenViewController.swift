@@ -12,6 +12,7 @@ protocol LoginScreenViewModelProtocol: class {
 	var login: String { get }
 	var password: String { get }
 	var isNeedPinCode: Bool { get }
+    var didValidateCredentials: ((Bool) -> Void)? { get set }
 
 	func changeLogin(_ newLogin: String)
 	func changePassword(_ newPassword: String)
@@ -25,6 +26,7 @@ class LoginScreenViewController: UIViewController {
     @IBOutlet weak var loginTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var enterButton: UIButton!
+
     @IBAction func pinCodeSwitch(_ sender: Any) {
 
     }
@@ -32,27 +34,31 @@ class LoginScreenViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-		viewModel = LoginScreenViewModel(login: "", password: "")
+        viewModel = LoginScreenViewModel(login: "", password: "")
+
+        viewModel.didValidateCredentials = { [weak self] isValidated in
+            self?.enterButton.isEnabled = isValidated
+            self?.enterButton.alpha = isValidated ? 1.0 : 0.5
+        }
     }
 
 	@IBAction func tapOnScreen(_ sender: Any) {
 		resignFirstResponder()
 	}
 
-}
+    @IBAction func loginTextFieldDidChange(_ sender: UITextField) {
+        guard let text = sender.text else {
+            return
+        }
 
-extension LoginScreenViewController: UITextFieldDelegate {
-	func textFieldDidEndEditing(_ textField: UITextField) {
-		guard let text = textField.text else {
-			return
-		}
-		switch textField {
-		case loginTextField:
-			viewModel.changeLogin(text)
-		case passwordTextField:
-			viewModel.changePassword(text)
-		default:
-			break
-		}
-	}
+        viewModel.changeLogin(text)
+    }
+
+    @IBAction func passwordTextFieldDidChange(_ sender: UITextField) {
+        guard let text = sender.text else {
+            return
+        }
+
+        viewModel.changePassword(text)
+    }
 }
