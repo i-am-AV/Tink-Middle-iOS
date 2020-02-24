@@ -9,13 +9,15 @@
 /* Begin PBXBuildFile section */
 		0FB559B2C1108999C5AFD53F /* Pods_tinkoff_project.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98BDC2E483CE4F69374E9872 /* Pods_tinkoff_project.framework */; };
 		A7FAE0122404121E0052FBAB /* LoginScreenModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7FAE0112404121E0052FBAB /* LoginScreenModel.swift */; };
+		A7FAE01824041D530052FBAB /* PinCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7FAE01724041D530052FBAB /* PinCodeViewController.swift */; };
+		A7FAE021240423420052FBAB /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7FAE020240423420052FBAB /* R.generated.swift */; };
+		A7FAE02624043D3C0052FBAB /* PinCodeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7FAE02524043D3C0052FBAB /* PinCodeViewModel.swift */; };
 		EB23C54E24032CA600B44995 /* LoginScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB23C54D24032CA600B44995 /* LoginScreenViewController.swift */; };
 		EB87A7462402AC34008E5D51 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB87A7452402AC34008E5D51 /* AppDelegate.swift */; };
 		EB87A7482402AC34008E5D51 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB87A7472402AC34008E5D51 /* SceneDelegate.swift */; };
 		EB87A74D2402AC34008E5D51 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB87A74B2402AC34008E5D51 /* Main.storyboard */; };
 		EB87A74F2402AC3A008E5D51 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB87A74E2402AC3A008E5D51 /* Assets.xcassets */; };
 		EB87A7522402AC3A008E5D51 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB87A7502402AC3A008E5D51 /* LaunchScreen.storyboard */; };
-		EB87A75B2402DEFA008E5D51 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB87A75A2402DEFA008E5D51 /* R.generated.swift */; };
 		EB87A763240317AD008E5D51 /* LoginScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB87A762240317AD008E5D51 /* LoginScreenViewModel.swift */; };
 /* End PBXBuildFile section */
 
@@ -24,6 +26,9 @@
 		14B2AD9EADCB2A820185510A /* Pods-tinkoff-project.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tinkoff-project.debug.xcconfig"; path = "Target Support Files/Pods-tinkoff-project/Pods-tinkoff-project.debug.xcconfig"; sourceTree = "<group>"; };
 		98BDC2E483CE4F69374E9872 /* Pods_tinkoff_project.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_tinkoff_project.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7FAE0112404121E0052FBAB /* LoginScreenModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreenModel.swift; sourceTree = "<group>"; };
+		A7FAE01724041D530052FBAB /* PinCodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinCodeViewController.swift; sourceTree = "<group>"; };
+		A7FAE020240423420052FBAB /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
+		A7FAE02524043D3C0052FBAB /* PinCodeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinCodeViewModel.swift; sourceTree = "<group>"; };
 		EB23C54D24032CA600B44995 /* LoginScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreenViewController.swift; sourceTree = "<group>"; };
 		EB87A7422402AC34008E5D51 /* tinkoff-project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "tinkoff-project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB87A7452402AC34008E5D51 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = SupportingFiles/AppDelegate.swift; sourceTree = "<group>"; };
@@ -32,7 +37,6 @@
 		EB87A74E2402AC3A008E5D51 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EB87A7512402AC3A008E5D51 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EB87A7532402AC3A008E5D51 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = SupportingFiles/Info.plist; sourceTree = "<group>"; };
-		EB87A75A2402DEFA008E5D51 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = R.generated.swift; path = "tinkoff-project/SupportingFiles/R.generated.swift"; sourceTree = SOURCE_ROOT; };
 		EB87A762240317AD008E5D51 /* LoginScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreenViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -73,6 +77,31 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		A7FAE02224043D170052FBAB /* PinCodeView */ = {
+			isa = PBXGroup;
+			children = (
+				A7FAE02324043D220052FBAB /* View */,
+				A7FAE02424043D260052FBAB /* ViewModel */,
+			);
+			path = PinCodeView;
+			sourceTree = "<group>";
+		};
+		A7FAE02324043D220052FBAB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A7FAE01724041D530052FBAB /* PinCodeViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A7FAE02424043D260052FBAB /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				A7FAE02524043D3C0052FBAB /* PinCodeViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		EB87A7392402AC34008E5D51 = {
 			isa = PBXGroup;
 			children = (
@@ -94,16 +123,17 @@
 		EB87A7442402AC34008E5D51 /* tinkoff-project */ = {
 			isa = PBXGroup;
 			children = (
+				A7FAE02224043D170052FBAB /* PinCodeView */,
 				EB87A7452402AC34008E5D51 /* AppDelegate.swift */,
 				EB87A7472402AC34008E5D51 /* SceneDelegate.swift */,
+				A7FAE020240423420052FBAB /* R.generated.swift */,
 				EB87A7602403146F008E5D51 /* View */,
 				EB87A764240317BF008E5D51 /* VIewModel */,
 				A7FAE0102404120B0052FBAB /* Model */,
-				EB87A75A2402DEFA008E5D51 /* R.generated.swift */,
 				EB87A74B2402AC34008E5D51 /* Main.storyboard */,
-				EB87A74E2402AC3A008E5D51 /* Assets.xcassets */,
 				EB87A7502402AC3A008E5D51 /* LaunchScreen.storyboard */,
 				EB87A7532402AC3A008E5D51 /* Info.plist */,
+				EB87A74E2402AC3A008E5D51 /* Assets.xcassets */,
 			);
 			path = "tinkoff-project";
 			sourceTree = "<group>";
@@ -138,6 +168,7 @@
 				EB87A73F2402AC34008E5D51 /* Frameworks */,
 				EB87A7402402AC34008E5D51 /* Resources */,
 				9C552486A991C08B0AE56C5A /* [CP] Embed Pods Frameworks */,
+				A7FAE01B240420620052FBAB /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -212,6 +243,23 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-tinkoff-project/Pods-tinkoff-project-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		A7FAE01B240420620052FBAB /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nif which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"error: SwiftLint does not exist, download it from https://github.com/realm/SwiftLint\"\n  exit 1\nfi\n\n";
+		};
 		EB87A7592402D3ED008E5D51 /* R.swift */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -230,7 +278,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/R.generated.swift\"\n\n";
+			shellScript = "\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/R.generated.swift\"\n";
 		};
 		EB87A75C2402E0D9008E5D51 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -278,12 +326,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A7FAE01824041D530052FBAB /* PinCodeViewController.swift in Sources */,
 				EB87A7462402AC34008E5D51 /* AppDelegate.swift in Sources */,
+				A7FAE021240423420052FBAB /* R.generated.swift in Sources */,
 				A7FAE0122404121E0052FBAB /* LoginScreenModel.swift in Sources */,
 				EB23C54E24032CA600B44995 /* LoginScreenViewController.swift in Sources */,
 				EB87A7482402AC34008E5D51 /* SceneDelegate.swift in Sources */,
 				EB87A763240317AD008E5D51 /* LoginScreenViewModel.swift in Sources */,
-				EB87A75B2402DEFA008E5D51 /* R.generated.swift in Sources */,
+				A7FAE02624043D3C0052FBAB /* PinCodeViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -430,7 +480,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9M6JDTKFW3;
-				INFOPLIST_FILE = "tinkoff-project/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/tinkoff-project/SupportingFiles/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -449,7 +499,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9M6JDTKFW3;
-				INFOPLIST_FILE = "tinkoff-project/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/tinkoff-project/SupportingFiles/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
