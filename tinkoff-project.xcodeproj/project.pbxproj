@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0FB559B2C1108999C5AFD53F /* Pods_tinkoff_project.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98BDC2E483CE4F69374E9872 /* Pods_tinkoff_project.framework */; };
+		A7FAE0122404121E0052FBAB /* LoginScreenModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7FAE0112404121E0052FBAB /* LoginScreenModel.swift */; };
 		EB23C54E24032CA600B44995 /* LoginScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB23C54D24032CA600B44995 /* LoginScreenViewController.swift */; };
 		EB87A7462402AC34008E5D51 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB87A7452402AC34008E5D51 /* AppDelegate.swift */; };
 		EB87A7482402AC34008E5D51 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB87A7472402AC34008E5D51 /* SceneDelegate.swift */; };
@@ -16,13 +17,13 @@
 		EB87A7522402AC3A008E5D51 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB87A7502402AC3A008E5D51 /* LaunchScreen.storyboard */; };
 		EB87A75B2402DEFA008E5D51 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB87A75A2402DEFA008E5D51 /* R.generated.swift */; };
 		EB87A763240317AD008E5D51 /* LoginScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB87A762240317AD008E5D51 /* LoginScreenViewModel.swift */; };
-		EB87A766240317FD008E5D51 /* LoginScreenModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB87A765240317FD008E5D51 /* LoginScreenModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		093897E42EBD926BCDA76294 /* Pods-tinkoff-project.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tinkoff-project.release.xcconfig"; path = "Target Support Files/Pods-tinkoff-project/Pods-tinkoff-project.release.xcconfig"; sourceTree = "<group>"; };
 		14B2AD9EADCB2A820185510A /* Pods-tinkoff-project.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tinkoff-project.debug.xcconfig"; path = "Target Support Files/Pods-tinkoff-project/Pods-tinkoff-project.debug.xcconfig"; sourceTree = "<group>"; };
 		98BDC2E483CE4F69374E9872 /* Pods_tinkoff_project.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_tinkoff_project.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A7FAE0112404121E0052FBAB /* LoginScreenModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreenModel.swift; sourceTree = "<group>"; };
 		EB23C54D24032CA600B44995 /* LoginScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreenViewController.swift; sourceTree = "<group>"; };
 		EB87A7422402AC34008E5D51 /* tinkoff-project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "tinkoff-project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB87A7452402AC34008E5D51 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = SupportingFiles/AppDelegate.swift; sourceTree = "<group>"; };
@@ -33,7 +34,6 @@
 		EB87A7532402AC3A008E5D51 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = SupportingFiles/Info.plist; sourceTree = "<group>"; };
 		EB87A75A2402DEFA008E5D51 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = R.generated.swift; path = "tinkoff-project/SupportingFiles/R.generated.swift"; sourceTree = SOURCE_ROOT; };
 		EB87A762240317AD008E5D51 /* LoginScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreenViewModel.swift; sourceTree = "<group>"; };
-		EB87A765240317FD008E5D51 /* LoginScreenModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LoginScreenModel.swift; path = ../LoginScreenModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +65,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		A7FAE0102404120B0052FBAB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A7FAE0112404121E0052FBAB /* LoginScreenModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		EB87A7392402AC34008E5D51 = {
 			isa = PBXGroup;
 			children = (
@@ -90,7 +98,7 @@
 				EB87A7472402AC34008E5D51 /* SceneDelegate.swift */,
 				EB87A7602403146F008E5D51 /* View */,
 				EB87A764240317BF008E5D51 /* VIewModel */,
-				EB87A76724031812008E5D51 /* Model */,
+				A7FAE0102404120B0052FBAB /* Model */,
 				EB87A75A2402DEFA008E5D51 /* R.generated.swift */,
 				EB87A74B2402AC34008E5D51 /* Main.storyboard */,
 				EB87A74E2402AC3A008E5D51 /* Assets.xcassets */,
@@ -114,14 +122,6 @@
 				EB87A762240317AD008E5D51 /* LoginScreenViewModel.swift */,
 			);
 			path = VIewModel;
-			sourceTree = "<group>";
-		};
-		EB87A76724031812008E5D51 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				EB87A765240317FD008E5D51 /* LoginScreenModel.swift */,
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -279,7 +279,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EB87A7462402AC34008E5D51 /* AppDelegate.swift in Sources */,
-				EB87A766240317FD008E5D51 /* LoginScreenModel.swift in Sources */,
+				A7FAE0122404121E0052FBAB /* LoginScreenModel.swift in Sources */,
 				EB23C54E24032CA600B44995 /* LoginScreenViewController.swift in Sources */,
 				EB87A7482402AC34008E5D51 /* SceneDelegate.swift in Sources */,
 				EB87A763240317AD008E5D51 /* LoginScreenViewModel.swift in Sources */,
