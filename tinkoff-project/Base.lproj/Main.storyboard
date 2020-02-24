@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Ggm-TC-R9b">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="3ts-zk-NN6">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
@@ -82,8 +82,26 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Введите Pin-код" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I9r-qg-RMH">
+                                <rect key="frame" x="134.5" y="98" width="145.5" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="EDn-RD-Cd2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GX0-qz-gg8">
+                                <rect key="frame" x="10" y="143" width="394" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="n5Z-fh-bAk"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="26"/>
+                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="ycu-bz-6Ff">
-                                <rect key="frame" x="25" y="144" width="364" height="488"/>
+                                <rect key="frame" x="25" y="198" width="364" height="488"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="TvE-NQ-Cef">
                                         <rect key="frame" x="0.0" y="0.0" width="364" height="116"/>
@@ -94,6 +112,9 @@
                                                     <constraint firstAttribute="width" secondItem="N0p-PN-fWs" secondAttribute="height" multiplier="1:1" id="9H1-dx-362"/>
                                                 </constraints>
                                                 <state key="normal" title="1"/>
+                                                <connections>
+                                                    <action selector="tapNumButton:" destination="Ggm-TC-R9b" eventType="touchUpInside" id="cke-ro-lau"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TK0-Io-Gx9">
                                                 <rect key="frame" x="124" y="0.0" width="116" height="116"/>
@@ -101,6 +122,9 @@
                                                     <constraint firstAttribute="width" secondItem="TK0-Io-Gx9" secondAttribute="height" multiplier="1:1" id="0bm-FS-Qum"/>
                                                 </constraints>
                                                 <state key="normal" title="2"/>
+                                                <connections>
+                                                    <action selector="tapNumButton:" destination="Ggm-TC-R9b" eventType="touchUpInside" id="7nA-T8-rZ0"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AxD-OX-eTj">
                                                 <rect key="frame" x="248" y="0.0" width="116" height="116"/>
@@ -108,6 +132,9 @@
                                                     <constraint firstAttribute="width" secondItem="AxD-OX-eTj" secondAttribute="height" multiplier="1:1" id="2EM-4G-DYH"/>
                                                 </constraints>
                                                 <state key="normal" title="3"/>
+                                                <connections>
+                                                    <action selector="tapNumButton:" destination="Ggm-TC-R9b" eventType="touchUpInside" id="PG8-Lu-9R8"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -120,6 +147,9 @@
                                                     <constraint firstAttribute="width" secondItem="umZ-Qj-FNh" secondAttribute="height" multiplier="1:1" id="5XZ-sm-fuk"/>
                                                 </constraints>
                                                 <state key="normal" title="4"/>
+                                                <connections>
+                                                    <action selector="tapNumButton:" destination="Ggm-TC-R9b" eventType="touchUpInside" id="RZI-7u-tWt"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aVC-Tl-FND">
                                                 <rect key="frame" x="124" y="0.0" width="116" height="116"/>
@@ -127,6 +157,9 @@
                                                     <constraint firstAttribute="width" secondItem="aVC-Tl-FND" secondAttribute="height" multiplier="1:1" id="nNH-z4-Iwt"/>
                                                 </constraints>
                                                 <state key="normal" title="5"/>
+                                                <connections>
+                                                    <action selector="tapNumButton:" destination="Ggm-TC-R9b" eventType="touchUpInside" id="bja-vN-7u9"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Ns-Ye-vYJ">
                                                 <rect key="frame" x="248" y="0.0" width="116" height="116"/>
@@ -134,6 +167,9 @@
                                                     <constraint firstAttribute="width" secondItem="9Ns-Ye-vYJ" secondAttribute="height" multiplier="1:1" id="Qyv-tX-LiH"/>
                                                 </constraints>
                                                 <state key="normal" title="6"/>
+                                                <connections>
+                                                    <action selector="tapNumButton:" destination="Ggm-TC-R9b" eventType="touchUpInside" id="Efw-as-rxh"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -146,6 +182,9 @@
                                                     <constraint firstAttribute="width" secondItem="UxS-22-nsU" secondAttribute="height" multiplier="1:1" id="fDu-F0-HWZ"/>
                                                 </constraints>
                                                 <state key="normal" title="7"/>
+                                                <connections>
+                                                    <action selector="tapNumButton:" destination="Ggm-TC-R9b" eventType="touchUpInside" id="q9m-UV-zdX"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gyk-xc-ITv">
                                                 <rect key="frame" x="124" y="0.0" width="116" height="116"/>
@@ -153,6 +192,9 @@
                                                     <constraint firstAttribute="width" secondItem="gyk-xc-ITv" secondAttribute="height" multiplier="1:1" id="858-Jk-65t"/>
                                                 </constraints>
                                                 <state key="normal" title="8"/>
+                                                <connections>
+                                                    <action selector="tapNumButton:" destination="Ggm-TC-R9b" eventType="touchUpInside" id="KlU-tC-NUP"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iId-3H-1rt">
                                                 <rect key="frame" x="248" y="0.0" width="116" height="116"/>
@@ -160,6 +202,9 @@
                                                     <constraint firstAttribute="width" secondItem="iId-3H-1rt" secondAttribute="height" multiplier="1:1" id="6cW-KU-kuw"/>
                                                 </constraints>
                                                 <state key="normal" title="9"/>
+                                                <connections>
+                                                    <action selector="tapNumButton:" destination="Ggm-TC-R9b" eventType="touchUpInside" id="zDd-dD-dmS"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -172,6 +217,9 @@
                                                     <constraint firstAttribute="width" secondItem="5zU-IR-y2E" secondAttribute="height" multiplier="1:1" id="sRn-dn-rZv"/>
                                                 </constraints>
                                                 <state key="normal" title="Delete"/>
+                                                <connections>
+                                                    <action selector="tapDeleteButton:" destination="Ggm-TC-R9b" eventType="touchUpInside" id="cp9-YI-SNd"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EMd-1V-RYg">
                                                 <rect key="frame" x="124" y="0.0" width="116" height="116"/>
@@ -179,6 +227,9 @@
                                                     <constraint firstAttribute="width" secondItem="EMd-1V-RYg" secondAttribute="height" multiplier="1:1" id="o2m-be-vyQ"/>
                                                 </constraints>
                                                 <state key="normal" title="0"/>
+                                                <connections>
+                                                    <action selector="tapNumButton:" destination="Ggm-TC-R9b" eventType="touchUpInside" id="sTL-Fw-R8w"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ldT-cd-NCV">
                                                 <rect key="frame" x="248" y="0.0" width="116" height="116"/>
@@ -186,6 +237,9 @@
                                                     <constraint firstAttribute="width" secondItem="ldT-cd-NCV" secondAttribute="height" multiplier="1:1" id="r9D-n0-nrD"/>
                                                 </constraints>
                                                 <state key="normal" title="Cancel"/>
+                                                <connections>
+                                                    <action selector="tapCancelButton:" destination="Ggm-TC-R9b" eventType="touchUpInside" id="Vag-gd-NZC"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -197,28 +251,43 @@
                                     <constraint firstItem="TvE-NQ-Cef" firstAttribute="leading" secondItem="ycu-bz-6Ff" secondAttribute="leading" id="81K-lZ-1pM"/>
                                     <constraint firstItem="OIN-F4-BvY" firstAttribute="leading" secondItem="ycu-bz-6Ff" secondAttribute="leading" id="FAB-ev-JxV"/>
                                     <constraint firstAttribute="trailing" secondItem="nJ8-l2-4yo" secondAttribute="trailing" id="PS8-fy-4PY"/>
+                                    <constraint firstAttribute="width" secondItem="ycu-bz-6Ff" secondAttribute="height" multiplier="91:122" id="aVg-Dy-26H"/>
                                     <constraint firstItem="nJ8-l2-4yo" firstAttribute="leading" secondItem="ycu-bz-6Ff" secondAttribute="leading" id="idN-q9-aaJ"/>
                                     <constraint firstItem="sLw-4h-hY9" firstAttribute="leading" secondItem="ycu-bz-6Ff" secondAttribute="leading" id="pRS-FA-THF"/>
+                                    <constraint firstAttribute="width" priority="300" constant="364" id="pyj-OZ-YnX"/>
                                 </constraints>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PGx-dt-lQP">
-                                <rect key="frame" x="185" y="652" width="44" height="30"/>
+                                <rect key="frame" x="173.5" y="706" width="67" height="41"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <state key="normal" title="Войти"/>
+                                <connections>
+                                    <action selector="tapSingInButton:" destination="Ggm-TC-R9b" eventType="touchUpInside" id="2YR-db-ohv"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="GX0-qz-gg8" firstAttribute="top" secondItem="I9r-qg-RMH" secondAttribute="bottom" constant="20" id="0KY-9r-GZo"/>
                             <constraint firstItem="PGx-dt-lQP" firstAttribute="centerX" secondItem="xVD-E0-8qw" secondAttribute="centerX" id="1jS-Of-GxV"/>
-                            <constraint firstItem="ycu-bz-6Ff" firstAttribute="leading" secondItem="PgB-ph-mun" secondAttribute="leading" constant="25" id="Fmj-0V-qVg"/>
-                            <constraint firstItem="PgB-ph-mun" firstAttribute="trailing" secondItem="ycu-bz-6Ff" secondAttribute="trailing" constant="25" id="o7Q-IG-B4Y"/>
+                            <constraint firstItem="ycu-bz-6Ff" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="PgB-ph-mun" secondAttribute="leading" constant="25" id="Fmj-0V-qVg"/>
+                            <constraint firstItem="GX0-qz-gg8" firstAttribute="centerX" secondItem="xVD-E0-8qw" secondAttribute="centerX" id="SW7-Yn-9VV"/>
+                            <constraint firstItem="I9r-qg-RMH" firstAttribute="centerX" secondItem="xVD-E0-8qw" secondAttribute="centerX" id="Wa5-uq-BY5"/>
+                            <constraint firstAttribute="trailing" secondItem="GX0-qz-gg8" secondAttribute="trailing" constant="10" id="Zap-gT-1ql"/>
+                            <constraint firstItem="PgB-ph-mun" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="ycu-bz-6Ff" secondAttribute="trailing" constant="25" id="o7Q-IG-B4Y"/>
                             <constraint firstItem="PGx-dt-lQP" firstAttribute="top" secondItem="ycu-bz-6Ff" secondAttribute="bottom" constant="20" id="pQC-6S-NaZ"/>
-                            <constraint firstItem="ycu-bz-6Ff" firstAttribute="top" secondItem="PgB-ph-mun" secondAttribute="top" constant="100" id="sP4-kK-Y7S"/>
+                            <constraint firstItem="I9r-qg-RMH" firstAttribute="top" secondItem="PgB-ph-mun" secondAttribute="top" constant="10" id="qcm-UB-NBk"/>
                             <constraint firstItem="ycu-bz-6Ff" firstAttribute="centerX" secondItem="xVD-E0-8qw" secondAttribute="centerX" id="v5E-gS-kfh"/>
-                            <constraint firstItem="PgB-ph-mun" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="PGx-dt-lQP" secondAttribute="bottom" constant="20" id="wcQ-jb-URX"/>
+                            <constraint firstItem="PgB-ph-mun" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="PGx-dt-lQP" secondAttribute="bottom" constant="10" id="wcQ-jb-URX"/>
+                            <constraint firstItem="ycu-bz-6Ff" firstAttribute="top" secondItem="GX0-qz-gg8" secondAttribute="bottom" constant="20" id="yIt-vj-rBv"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="PgB-ph-mun"/>
                     </view>
+                    <navigationItem key="navigationItem" id="BCy-b2-y0n"/>
                     <connections>
+                        <outlet property="doneOrSingInButton" destination="PGx-dt-lQP" id="fHk-Xi-z3t"/>
+                        <outlet property="enterPinLabel" destination="I9r-qg-RMH" id="muM-LJ-jMu"/>
+                        <outlet property="enteredPinCodeLabel" destination="GX0-qz-gg8" id="bFc-Ha-tqS"/>
                         <outletCollection property="numButtons" destination="N0p-PN-fWs" collectionClass="NSMutableArray" id="sLS-ON-PsU"/>
                         <outletCollection property="numButtons" destination="TK0-Io-Gx9" collectionClass="NSMutableArray" id="Nra-jS-Ci5"/>
                         <outletCollection property="numButtons" destination="AxD-OX-eTj" collectionClass="NSMutableArray" id="fZ2-3z-3v3"/>
@@ -234,6 +303,24 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SPv-TB-atG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1788.4057971014495" y="133.92857142857142"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Htr-gP-aHE">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="3ts-zk-NN6" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="wLt-Rg-YYz">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Ggm-TC-R9b" kind="relationship" relationship="rootViewController" id="kjy-5H-gET"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wcx-xv-1BA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="878.26086956521749" y="133.92857142857142"/>
         </scene>
