@@ -26,6 +26,7 @@ class LoginScreenViewController: UIViewController {
     @IBOutlet weak var loginTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var enterButton: UIButton!
+	@IBOutlet weak var pinCodeSwitcher: UISwitch!
 
     @IBAction func pinCodeSwitch(_ sender: Any) {
 
@@ -36,11 +37,15 @@ class LoginScreenViewController: UIViewController {
 
         viewModel = LoginScreenViewModel(login: "", password: "")
 
-        viewModel.didValidateCredentials = { [weak self] isValidated in
+		validate()
+    }
+
+	func validate() {
+		viewModel.didValidateCredentials = { [weak self] isValidated in
             self?.enterButton.isEnabled = isValidated
             self?.enterButton.alpha = isValidated ? 1.0 : 0.5
         }
-    }
+	}
 
 	@IBAction func tapOnScreen(_ sender: Any) {
 		resignFirstResponder()
@@ -52,6 +57,8 @@ class LoginScreenViewController: UIViewController {
         }
 
         viewModel.changeLogin(text)
+
+		validate()
     }
 
     @IBAction func passwordTextFieldDidChange(_ sender: UITextField) {
@@ -60,5 +67,22 @@ class LoginScreenViewController: UIViewController {
         }
 
         viewModel.changePassword(text)
+		validate()
     }
+
+	@IBAction func tapEnterButton(_ sender: UIButton) {
+		if pinCodeSwitcher.isOn {
+			performSegue(withIdentifier: "ToSetPinView", sender: self)
+		} else {
+			presentEmptyView()
+		}
+	}
+
+
+	func presentEmptyView() {
+
+		let viewController = UIViewController()
+		viewController.view.backgroundColor = .lightText
+		navigationController?.pushViewController(viewController, animated: true)
+	}
 }
