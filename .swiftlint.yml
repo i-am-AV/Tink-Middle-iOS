@@ -1,4 +1,11 @@
+warning_threshold: 15
+
 excluded:
 - Pods
 - R.generated.swift
-- StoryboardViewControllerResource.swift
+
+disabled_rules:
+- trailing_whitespace
+
+line_length:
+    warning: 150

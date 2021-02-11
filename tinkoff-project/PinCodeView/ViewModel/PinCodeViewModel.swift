@@ -27,7 +27,6 @@ class PinCodeViweModel {
 	private var pinCode: String
 	private var userDefKey = "isHasPinCode"
 
-
 	init(view: PinCodeViewProtocol) {
 		self.isHasAPinCode = false
 		self.pinCode = ""
@@ -35,7 +34,7 @@ class PinCodeViweModel {
 	}
 }
 
-//MARK: - Private
+// MARK: - Private
 extension PinCodeViweModel {
 
 	private func check() -> Bool {

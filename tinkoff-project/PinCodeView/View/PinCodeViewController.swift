@@ -21,7 +21,7 @@ protocol PinCodeViewModelPrototcol: class {
 
 class PinCodeViewController: UIViewController {
 
-	var isFirstPinCodeEnter = true  {
+	var isFirstPinCodeEnter = true {
 		didSet {
 			enterPinLabel.text = "Подтвердите пин-код"
 		}
